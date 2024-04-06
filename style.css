@@ -1,0 +1,427 @@
+
+html{
+    width: 100%;
+    height: 360%;
+  
+}
+body{
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+hea
+der{
+    width: 100%;
+    box-shadow: 0 0 5px;
+}
+.nav{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(117, 170, 219) ;
+    box-shadow: 0 0 15px;
+    position: fixed; 
+    z-index: 100; 
+}
+
+.logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.logo img{
+    width: 75%;
+    height: 100%;
+  
+}
+.conteiner-li{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+}
+.list{
+    width:20%;
+    height: 75%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.list a{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:  rgb(255, 255, 255) ;
+    transition: all 0.25s ease-in-out;
+    font-size: 16px;
+    letter-spacing: 1px;
+    
+}
+    
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+section{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    width: 100%;
+    height: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: end;  
+}
+.conteiner-data-f{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    align-items: center;
+    color: #ffffff; 
+}
+
+.conteiner-aboutMe{
+    width: 100%;
+    height: 100%;
+}
+
+/*************************************************/
+
+.conteiner-Scarrucel{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 5px;
+ 
+}
+.conteiner-Scarrucel ul{
+    display: flex;
+    width: 400%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    animation: slide 20s infinite alternate ease-in-out;
+   
+}
+.conteiner-Scarrucel li {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 5px;
+
+
+}
+.texto {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0%;
+    top:0%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0,0.5);
+}
+
+.texto h2{
+    width:70%;
+    height: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size:75px;
+    margin: 0;
+    padding: 0;
+    word-spacing: -2px;  
+    margin-left: 8%;
+}
+.texto p{
+    width: 70%;
+    height: 10%;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    font-size: 30px;
+    margin-left: 8%;
+
+}
+.conteiner-a {
+    width: 70%;
+    height: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0%;
+    margin-left: 8%;
+} 
+.conteiner-a a{
+    width: 15%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 40px;
+    color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+    letter-spacing: 1px;
+    background-color:  rgb(117, 170, 219) ;
+    border :1px solid #ffffff;
+}
+
+.conteiner-Scarrucel img{
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    animation: img 20s  infinite alternate ease-in-out;;
+        
+}
+@keyframes slide {
+    
+    0%{margin-left: 0%; }
+    20%{margin-left: 0%;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+@keyframes img{
+    
+    0%{width: 100%;height: 100%;}
+    20%{width: 110%;height: 110%;}
+    
+  
+    25%{width: 110%;height: 110%;}
+    45%{width: 100%;height: 100%;}
+    
+    50%{width: 100%;height: 100%;}
+    70%{width: 110%;height: 110%;}
+
+    75%{width: 110%;height: 110%;}
+    100%{width: 100%;height: 100%;}
+    
+ 
+}
+/*********************************************/
+.conteiner-contact{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    box-shadow: 0 0 15px;
+    margin-top: 5%;
+     background-color:  rgb(117, 170, 219,0.971) ;
+    overflow: hidden;
+}
+.conteiner-img{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner-img img{
+    width: 100%;
+    height: 50%;
+}
+form{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteiner-inp{
+    width: 100%;
+    height:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-inp input{
+    width: 80%;
+    height: 30%;
+    padding:0 5px;
+    border:none;
+    outline: none;
+    border-bottom:1px solid #000000;
+}
+
+
+.conteiner-inp label{
+    width: 80%;
+    height: 30%;
+    font-size: 20px;
+    text-align: center;
+}
+textarea{
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+    padding:5px 5px;
+}
+#btn{
+    width: 30%;
+    height: 45%;
+    background-color:  rgb(117, 170, 219) ;
+    border: 1px solid rgb(0, 0, 0, 0.4) ;
+    border-radius: 50px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+/***********************************************/
+
+
+/*********************************************/
+.mansalva-regular {
+    font-family: "Mansalva", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/*********************************************/
+
+#Scontact{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-image: url(./image/learnspanish.png);
+    background-repeat: no-repeat;
+    background-size: 100%;  
+    background-position: 50% 50%;  
+   
+}
+.conteiner-imgC ,.conteiner-descripcion{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    color: #ffffff;
+}
+.conteiner-imgC img{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.conteiner-descripcion h2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.conteiner-redes{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+.redes{
+    width: 33.33%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.971);
+    color: #000000;
+   
+}
+.redes img{
+    width: 8%;
+    height: 15%;
+    transition: all 0.25s ease-in-out;
+}
+
+/****************************************/
+.icono-what{
+    width: 5%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 83%;
+    left: 92%;
+    border-radius:50%;
+    background-color: rgb(37,211,102);
+    transition: all 0.25s ease-in-out;
+}
+.icono-what img{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+   
+}
+
+/*********************************************/
+.list a:hover, .icono-what:hover, .redes img:hover{
+    color: #030303;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*************************************************/
