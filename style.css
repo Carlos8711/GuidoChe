@@ -1,8 +1,7 @@
 
 html{
     width: 100%;
-    height: 360%;
-  
+    height: 360%; 
 }
 body{
     height: 100%;
@@ -10,8 +9,7 @@ body{
     padding: 0%;
     margin: 0%;
 }
-hea
-der{
+header{
     width: 100%;
     box-shadow: 0 0 5px;
 }
@@ -401,10 +399,10 @@ textarea{
     justify-content: center;
     align-items: center;
     position: fixed;
+    background-color: rgb(	37,211,102);;
     top: 83%;
     left: 92%;
     border-radius:50%;
-    background-color: rgb(37,211,102);
     transition: all 0.25s ease-in-out;
 }
 .icono-what img{
@@ -429,49 +427,91 @@ textarea{
     width: 100%;
     min-height: 100%;
     display: flex;
-  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.conteiner-img-testimonios{
+.conteiner-descripcion-t{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner-testimonio{
     width: 100%;
     height: 100%;
     display: flex;
+}
+
+.conteiner-img-testimonios{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    margin: 2%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 1px solid rgb(0, 0, 0, 0.1);   
 }
 .img-testimonio{
-    width: 90%;
-    height: 95%;
+    width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
-    border: 1px solid black;
-
+    margin: 0;
+    padding: 0;
+   
 }
 
 .conteiner-img-testimonios img{
-    width: 40%;
-    height:33.33%;
+    width: 30%;
+    height:70%;
     border-radius: 50%;
     box-shadow: 0 0 5px;
 }
 .conteiner-img-testimonios p{
-    width: 90%;
+    width: 95%;
     height:50%;
     display: flex;
     text-align: center;
-    justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: #000000;
+    font-size: 12px;
+}
+.conteiner-img{
+    width: 100%;
+    height:50%;
+     margin: 0;
+    padding: 0;
+}
+.conteiner-img{
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
 }
 
 #bandera-alemana{
-    background-image: url(./image/banderaalemania.jpg);
+    
+    background-image: url(./image/banderaalemana3.avif);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: rgb(0, 0, 0);
+    background-size: 100% 100%;
+   
 }
+#bandera-francesa{
+    background-image: url(./image/banderafrancia2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#bandera-eeuu{
+    background-image: url(./image/bandereeuu2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+  
     
