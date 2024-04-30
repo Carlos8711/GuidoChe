@@ -8,6 +8,7 @@ body{
     width: 100%;
     padding: 0%;
     margin: 0%;
+    background-color: #EDEDED;
 }
 header{
     width: 100%;
@@ -430,31 +431,38 @@ textarea{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid #000000;
+
 }
 .conteiner-descripcion-t{
     width: 100%;
-    height: 30%;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #000000;
+   /* font-size: 45px;*/
 }
 .conteiner-testimonio{
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
 }
 
 .conteiner-img-testimonios{
-    width: 80%;
-    height: 90%;
+    width: 33%;
+    height: 100%;
     display: flex;
     margin: 2%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-radius: 30px;
-    border: 1px solid rgb(0, 0, 0, 0.1);   
+    border-radius: 10px;
+    box-shadow: 0 0 2px;
 }
 .img-testimonio{
     width: 100%;
@@ -465,17 +473,17 @@ textarea{
     align-items: center;
     margin: 0;
     padding: 0;
-   
+    border: 1px solid #000000;
 }
 
 .conteiner-img-testimonios img{
-    width: 30%;
-    height:70%;
+    width: 150px;
+    height:150px;
     border-radius: 50%;
     box-shadow: 0 0 5px;
 }
 .conteiner-img-testimonios p{
-    width: 95%;
+    width: 100%;
     height:50%;
     display: flex;
     text-align: center;
