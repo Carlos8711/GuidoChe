@@ -431,8 +431,6 @@ textarea{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000000;
-
 }
 .conteiner-descripcion-t{
     width: 100%;
@@ -440,7 +438,6 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000000;
    /* font-size: 45px;*/
 }
 .conteiner-testimonio{
@@ -449,7 +446,7 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000000;
+
 }
 
 .conteiner-img-testimonios{
@@ -462,7 +459,7 @@ textarea{
     align-items: center;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 0 2px;
+    box-shadow: 0 0 15px;
 }
 .img-testimonio{
     width: 100%;
@@ -473,20 +470,43 @@ textarea{
     align-items: center;
     margin: 0;
     padding: 0;
-    border: 1px solid #000000;
+    
+ 
 }
 
 .conteiner-img-testimonios img{
     width: 150px;
     height:150px;
     border-radius: 50%;
-    box-shadow: 0 0 5px;
+    box-shadow: 0 0 8px;
+
 }
-.conteiner-img-testimonios p{
+.conteiner-data-testimonios {
     width: 100%;
     height:50%;
     display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    color: #000000;
+    font-size: 12px;
+}
+.conteiner-data-testimonios p{
+    width: 95%;
+    height:80%;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    color: #000000;
+    font-size: 12px;
+     margin: 0;
+    padding: 0px 10px 0px 10px;
+}
+.conteiner-t-data-testimonios {
+    width: 100%;
+    height:20%;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     color: #000000;
     font-size: 12px;
