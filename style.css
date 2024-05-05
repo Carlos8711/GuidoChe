@@ -1,7 +1,7 @@
 
 html{
     width: 100%;
-    height: 360%; 
+    height: 400%; 
 }
 body{
     height: 100%;
@@ -76,7 +76,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
 }
 section{
     width: 100%;
@@ -313,7 +312,32 @@ textarea{
     cursor: pointer;
 }
 /***********************************************/
-
+.conteiner-services{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 8% ;  
+}
+.grid{
+    width: 200px;
+    height: 210px;
+    border: 1px solid red;
+    margin-left: 12%;
+    
+}
+.grid h3{ 
+    width: 100%;
+    height: 15%;
+    display: grid;
+    place-content: center;
+    border: 1px solid red;
+    margin-left: 8%;
+    margin: 0;
+    
+}
 
 /*********************************************/
 .mansalva-regular {
@@ -342,20 +366,35 @@ textarea{
     background-image: url(./image/learnspanish.png);
     background-repeat: no-repeat;
     background-size: 100%;  
-    background-position: 50% 50%;  
+    background-position: 50% 50%;   
+}
+.conteiner-services-t{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+#Sservices{
+    display: flex;
+    flex-direction: column;
+    border: 1px  rgb(117,170,219);
+    border-top-right-radius: 50% 15%;
+    background: rgb(117,170,219);
+    background: linear-gradient(180deg, rgba(117,170,219,1) 0%, rgba(255,255,255,1) 50%, rgba(117,170,219,1) 100%);
    
 }
 .conteiner-imgC ,.conteiner-descripcion{
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;  
     color: #ffffff;
 }
 .conteiner-imgC img{
-    width: 70%;
+    width: 60%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -366,10 +405,10 @@ textarea{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-size: 45px;
     margin: 0;
     padding: 0;    
+  
 }
 .conteiner-descripcion p{
     width: 100%;
@@ -379,12 +418,13 @@ textarea{
     flex-direction: column;
     margin: 0;
     padding: 0;
+
 }
 .conteiner-descripcion p span{
-    width: 80%;
+    width: 100%;
     height: 33%;
     display: flex;
-    align-items: center;
+    align-items: center;  
 }
 .conteiner-descripcion p span i{ 
     width: 5%;
@@ -410,6 +450,7 @@ textarea{
     align-items: center;
     background-color: rgb(255, 255, 255, 0.971);
     color: #000000;
+    letter-spacing: 1px;
    
 }
 .redes img{
@@ -426,7 +467,7 @@ textarea{
     justify-content: center;
     align-items: center;
     position: fixed;
-    background-color: rgb(	37,211,102);;
+    background-color: rgb(	37,211,102);
     top: 83%;
     left: 92%;
     border-radius:50%;
@@ -452,7 +493,7 @@ textarea{
 /*************************************************/
 .conteiner-aboutMe{
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -460,7 +501,7 @@ textarea{
 }
 .conteiner-descripcion-t{
     width: 100%;
-    height: 20%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -478,7 +519,7 @@ textarea{
 
 .conteiner-img-testimonios{
     width: 25%;
-    height: 80%;
+    height: 85%;
     display: flex;
     margin: 2%;
     flex-direction: column;
@@ -548,6 +589,7 @@ textarea{
      margin: 0;
     padding: 0;
 }
+/*********************************************/
 
 
 
