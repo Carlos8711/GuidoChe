@@ -251,24 +251,14 @@ footer{
     overflow: hidden;
 }
 .conteiner-img{
-    width: 30%;
+    width: 90%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.conteiner-img img{
-    width: 100%;
-    height: 50%;
-}
-form{
-    width: 60%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
+
 
 .conteiner-inp{
     width: 100%;
@@ -321,24 +311,66 @@ textarea{
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 8% ;  
 }
+
 .grid{
     width: 200px;
     height: 210px;
-    border: 1px solid red;
-    margin-left: 12%;
-    
+    margin-left: 12%;  
+    background-color: #ffffff;
+    color: #00529c;
+    box-shadow: 0 0 2px;
 }
+#block-1{
+    background-color: #e12c26;
+    color: #ffffff;
+}
+#block-2{
+    background-color: #ffffff;
+    color: #e12c26;
+}
+#block-3{
+    background-color: #00529c;
+    color: #ffffff;
+}
+#block-4{
+    background-color: #ffffff;
+    color: #000000;
+}
+#block-5{
+    background-color: #ffd23d;
+    color: #ffffff;
+}
+#block-8{
+    background-color: #000000;
+    color: #ffffff;
+}
+#block-6{
+    background-color:  rgb(117, 170, 219) ;
+    color: #ffffff;
+}
+.conteiner-i{
+    width: 100%;
+    height: 40%;
+    display: grid;
+    place-content: center;
+    font-size: 48px;
+    margin: 0; 
+}
+
 .grid h3{ 
     width: 100%;
     height: 15%;
     display: grid;
     place-content: center;
-    border: 1px solid red;
-    margin-left: 8%;
+    font-size: 16px;
     margin: 0;
-    
 }
-
+.grid p{ 
+    width: 100%;
+    height: 35%;
+    border: 1px solid red;
+    margin: 0;
+}
 /*********************************************/
 .mansalva-regular {
     font-family: "Mansalva", sans-serif;
@@ -357,6 +389,14 @@ textarea{
   font-weight: weight;
   font-style: normal;
 }
+
+
+.rubik-uniquifier {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 /*********************************************/
 
 #Scontact{
@@ -365,7 +405,7 @@ textarea{
     justify-content: start;
     background-image: url(./image/learnspanish.png);
     background-repeat: no-repeat;
-    background-size: 100%;  
+    background-size: 100% 100%;   
     background-position: 50% 50%;   
 }
 .conteiner-services-t{
@@ -375,15 +415,18 @@ textarea{
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    color: rgba(255, 255, 255);
+    background-color: #00529c;
 }
 #Sservices{
     display: flex;
     flex-direction: column;
     border: 1px  rgb(117,170,219);
-    border-top-right-radius: 50% 15%;
-    background: rgb(117,170,219);
-    background: linear-gradient(180deg, rgba(117,170,219,1) 0%, rgba(255,255,255,1) 50%, rgba(117,170,219,1) 100%);
-   
+    background-image:url(./image/pexels-peter-olexa-2214257-4012966.jpg);
+    background-position: 50% 100%  ;
+    background-repeat: no-repeat;
+    background-size: 100% 110% ;
+    box-shadow: 0 0 5px;
 }
 .conteiner-imgC ,.conteiner-descripcion{
     width: 50%;
@@ -392,6 +435,7 @@ textarea{
     flex-direction: column;
     align-items: center;  
     color: #ffffff;
+
 }
 .conteiner-imgC img{
     width: 60%;
@@ -519,20 +563,17 @@ textarea{
 
 .conteiner-img-testimonios{
     width: 25%;
-    height: 85%;
+    height: 75%;
     display: flex;
     margin: 2%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 0 1px;
-   
-    
+    border: 1px solid rgb(0, 0, 0, 0.1); 
 }
 .img-testimonio{
-    width: 100%;
+    width: 95%;
     height: 40%;
     display: flex;
     flex-direction: column;
@@ -549,10 +590,11 @@ textarea{
     height:140px;
     border-radius: 50%;
     box-shadow: 0 0 8px;
+    margin-bottom: 50%;
 }
 .conteiner-data-testimonios{
     width: 100%;
-    height:60%;
+    height:50%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -579,16 +621,7 @@ textarea{
     justify-content: center;
 }
 
-.conteiner-img{
-    width: 100%;
-    height:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-     margin: 0;
-    padding: 0;
-}
+
 /*********************************************/
 
 
