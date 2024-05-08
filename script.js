@@ -1,12 +1,14 @@
-let label=document.getElementById("label")
 
 
+let btncancel=document.getElementById("btn-send-cancel")
+let viewform=document.getElementById("conteiner-form")
 
 
+ function btnCancelMensege(){
+   viewform.classList.add('closeform')
+ }
 
- function modifyText(id){
-    let place=document.getElementById(id)
-
-    console.log(id)
+ function openMenssege(){
+   viewform.classList.remove('closeform')
 
  }

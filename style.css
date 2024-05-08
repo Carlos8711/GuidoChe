@@ -34,7 +34,6 @@ header{
 }.logo img{
     width: 75%;
     height: 100%;
-  
 }
 .conteiner-li{
     width: 70%;
@@ -52,8 +51,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
+
 .list a{
     width: 90%;
     height: 90%;
@@ -65,8 +64,7 @@ header{
     color:  rgb(255, 255, 255) ;
     transition: all 0.25s ease-in-out;
     font-size: 16px;
-    letter-spacing: 1px;
-    
+    letter-spacing: 1px; 
 }
     
 main{
@@ -84,6 +82,7 @@ section{
     justify-content: center;
     align-items: center;
 }
+
 footer{
     width: 100%;
     height: 1%;
@@ -114,7 +113,6 @@ footer{
     height: 100%;
     overflow: hidden;
     box-shadow: 0 0 5px;
- 
 }
 .conteiner-Scarrucel ul{
     display: flex;
@@ -123,9 +121,9 @@ footer{
     padding: 0;
     margin: 0;
     animation: slide 20s infinite alternate ease-in-out;
-   
 }
-.conteiner-Scarrucel li {
+
+.conteiner-Scarrucel li{
     width: 100%;
     height: 100%;
     list-style: none;
@@ -133,9 +131,8 @@ footer{
     padding: 0;
     margin: 0;
     box-shadow: 0 0 5px;
-
-
 }
+
 .texto {
     width: 100%;
     height: 100%;
@@ -154,41 +151,35 @@ footer{
 
 .texto h2{
     width:70%;
-    height: 40%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    height: 25%;
     font-size:75px;
     margin: 0;
     padding: 0;
     word-spacing: -2px;  
-    margin-left: 8%;
+    margin-left: 10%;
 }
+
 .texto p{
     width: 70%;
     height: 10%;
     padding: 0%;
     margin: 0%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    text-align: start;
     font-size: 30px;
-    margin-left: 8%;
-
+    margin-left: 10%; 
 }
+
 .conteiner-a {
-    width: 70%;
-    height: 25%;
+    width: 15%;
+    height: 10%;
     display: flex;
-    justify-content: start;
     align-items: center;
     padding: 0%;
-    margin-left: 8%;
+    margin-left: 10%;
 } 
+
 .conteiner-a a{
-    width: 15%;
-    height: 30%;
+    width: 70%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,7 +197,7 @@ footer{
     font-size: 25px;
     width: 100%;
     height: 100%;
-    animation: img 20s  infinite alternate ease-in-out;;
+    animation: img 20s  infinite alternate ease-in-out;
         
 }
 @keyframes slide {
@@ -247,7 +238,7 @@ footer{
     display: flex;
     box-shadow: 0 0 15px;
     margin-top: 5%;
-     background-color:  rgb(117, 170, 219,0.971) ;
+    background-color:  rgb(117, 170, 219,0.971) ;
     overflow: hidden;
 }
 .conteiner-img{
@@ -315,6 +306,10 @@ textarea{
 .grid{
     width: 200px;
     height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 12%;  
     background-color: #ffffff;
     color: #00529c;
@@ -366,9 +361,13 @@ textarea{
     margin: 0;
 }
 .grid p{ 
-    width: 100%;
-    height: 35%;
-    border: 1px solid red;
+    width: 90%;
+    height: 40%;
+    display: grid;
+    place-content: center;
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
     margin: 0;
 }
 /*********************************************/
@@ -417,6 +416,7 @@ textarea{
     font-size: 30px;
     color: rgba(255, 255, 255);
     background-color: #00529c;
+    background-color:  rgba(0, 92, 179, 0.462) ;
 }
 #Sservices{
     display: flex;
@@ -445,7 +445,7 @@ textarea{
 }
 .conteiner-descripcion h2{
     width: 100%;
-    height: 50%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -456,13 +456,13 @@ textarea{
 }
 .conteiner-descripcion p{
     width: 100%;
-    height: 50%;
+    height: 70%;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 0;
     padding: 0;
-
+    font-size: 20px;
 }
 .conteiner-descripcion p span{
     width: 100%;
@@ -498,8 +498,8 @@ textarea{
    
 }
 .redes img{
-    width: 8%;
-    height: 15%;
+    width: 10%;
+    height: 18%;
     transition: all 0.25s ease-in-out;
 }
 
@@ -643,5 +643,82 @@ textarea{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-  
-    
+/******************************************************/
+.conteiner-form{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.349);
+    top: 8%;
+    right: 0%;
+}
+.closeform{
+    display: none;
+}
+
+.form{
+    width: 35%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1%;
+    background-color: #ffffff;
+    font-size: 20px;  
+}
+.form i{
+    width: 98%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.form h2{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+.form input {
+    width: 80%;
+    height: 7%;
+    margin: 2%;
+    padding-left:10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+}
+/********************************************/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+/*********************************************/
+.form textarea {
+    width: 80%;
+    height: 25%;
+    margin: 2%;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+}
+button {
+    width: 80%;
+    height: 7%;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    background-color:  rgb(117, 170, 219) ;
+    border: 1px solid #00529c;
+}
