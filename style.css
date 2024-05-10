@@ -123,6 +123,7 @@ footer{
     animation: slide 20s infinite alternate ease-in-out;
 }
 
+
 .conteiner-Scarrucel li{
     width: 100%;
     height: 100%;
@@ -147,7 +148,7 @@ footer{
 .texto h2{
     width:70%;
     height: 20%;
-    font-size:75px;
+    font-size:85px;
     word-spacing: -2px;  
     margin: 10%  0 0 10%;
 
@@ -171,7 +172,7 @@ footer{
 } 
 
 .conteiner-a a{
-    width: 70%;
+    width: 100%;
     height: 60%;
     display: flex;
     justify-content: center;
@@ -183,6 +184,7 @@ footer{
     border :1px solid #ffffff; 
     color: #ffffff;
 }
+
 .conteiner-a i{
     margin-left: 10%;
    display: grid;
@@ -310,7 +312,8 @@ textarea{
     margin-left: 12%;  
     background-color: #ffffff;
     color: #00529c;
-    box-shadow: 0 0 2px;
+    box-shadow: 0 0 5px;border-radius: 10px;
+    transition: all 0.25s ease-in-out;
 }
 #block-1{
     background-color: #e12c26;
@@ -339,7 +342,6 @@ textarea{
 #block-7{
     background-color:  rgb(117, 170, 219) ;
     color: #ffffff;
-    cursor: pointer;
 }
 .conteiner-i{
     width: 100%;
@@ -528,6 +530,9 @@ textarea{
     border-radius:50%;
     transition: all 0.25s ease-in-out;
 }
+
+
+
 .icono-what img{
     width: 50%;
     height: 50%;
@@ -535,14 +540,16 @@ textarea{
     justify-content: center;
     align-items: center;
     z-index: 100;
-   
 }
 
 /*********************************************/
 .list a:hover, .icono-what:hover, .redes img:hover,.grid a:hover{
-    color: #030303;
     transform: scale(1.2);
     cursor: pointer;
+}
+#block-7:hover{
+    transform: scale(1.2);
+    background-color: #0aaa07;
 }
 
 /*************************************************/
@@ -639,7 +646,7 @@ textarea{
 
 #bandera-alemana{
     
-    background-image: url(./image/banderaalemana3.avif);
+    background-image: url(./image/banderaalemana2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
    
@@ -737,3 +744,4 @@ button {
     background-color:  rgb(117, 170, 219) ;
     border: 1px solid #00529c;
 }
+/**********************************************************************/
