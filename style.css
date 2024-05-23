@@ -32,27 +32,29 @@ header{
     justify-content: center;
     align-items: center;
 }.logo img{
-    width: 75%;
+    width: auto;
     height: 100%;
+    border: 1px solid red;
 }
 .logo a{
     width: 100%;
     height: 100%;
+    border: 1px solid red;
 }
 .conteiner-li {
     width: 50%;
-    height: 80%;
+    height: 100%;
     border: 1px solid red;
 }
 .conteiner-li ul{
     width: 100%;
     height: 100%;
-    border: 1px solid red;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     margin: 0%;
     padding: 0%;
+    border: 1px solid red;
 }
 .list{
     width:20%;
@@ -61,7 +63,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 .list a{
@@ -75,6 +76,7 @@ header{
     color:  rgb(255, 255, 255) ;
     transition: all 0.25s ease-in-out;
     letter-spacing: 1px;
+    font-size: 1.5vw;
     
 }
     
@@ -88,10 +90,7 @@ main{
 }
 section{
     width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 25%;
 }
 
 footer{
@@ -121,14 +120,14 @@ footer{
 
 .conteiner-Scarrucel{
     width: 100%;
-    height: 80%;
+    height: 100%;
     overflow: hidden;
     box-shadow: 0 0 5px;
 }
 .conteiner-Scarrucel ul{
     display: flex;
     width: 400%;
-    height: 100%;
+    height: 120%;
     padding: 0;
     margin: 0;
     animation: slide 20s infinite alternate ease-in-out;
@@ -140,9 +139,8 @@ footer{
     height: 100%;
     list-style: none;
     position: relative;
-    padding: 0;
-    margin: 0;
     box-shadow: 0 0 5px;
+ 
 }
 
 .texto {
@@ -157,18 +155,22 @@ footer{
 
 
 .texto h2{
-    width:70%;
+    width:95%;
     height: 20%;
-    font-size:75px;
+    display: flex;
+    align-items: center;
+    font-size:7vw;
     word-spacing: -2px;  
     margin: 10%  0 0 10%;
 }
 
 .texto p{
-    width: 70%;
+    width: 95%;
     height: 10%;
+    display: flex;
+    align-items: center;
     padding: 0%;
-    font-size: 30px;
+    font-size: 3vw;
     margin-left: 10%; 
 }
 
@@ -178,7 +180,7 @@ footer{
     display: flex;
     align-items: center;
     margin-left: 10%;
-    font-size: 18px;
+    font-size: 1.5vw;
 } 
 
 .conteiner-a a{
@@ -196,16 +198,7 @@ footer{
       
 }
 
-.conteiner-a i{
-    margin-left: 5%;
-   display: grid;
-   place-content: center;
-   font-size: 20px;   
-   
-}
-
 .conteiner-Scarrucel img{
-    font-size: 25px;
     width: 100%;
     height: 90%;
     animation: img 20s  infinite alternate ease-in-out;
@@ -225,7 +218,7 @@ footer{
     75%{margin-left: -300%;}
     100%{margin-left: -300%;}
 }
-@keyframes img1{
+@keyframes img{
     
     0%{width: 100%;height: 100%;}
     20%{width: 110%;height: 110%;}
@@ -240,27 +233,16 @@ footer{
     75%{width: 110%;height: 110%;}
     100%{width: 100%;height: 100%;}
     
- 
 }
 /*********************************************/
 .conteiner-contact{
     width: 100%;
-    height: 60%;
+    height: 50%;
     display: flex;
     box-shadow: 0 0 15px;
-    margin-top: 5%;
     background-color:  rgb(117, 170, 219,0.971) ;
     overflow: hidden;
 }
-.conteiner-img{
-    width: 90%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 
 .conteiner-inp{
     width: 100%;
@@ -311,6 +293,7 @@ textarea{
     place-content: center;
     grid-template-columns: 200px 200px 200px 200px;
     grid-gap: 8%;
+    border: 1px solod red;
 }
 
 .grid{
@@ -322,7 +305,8 @@ textarea{
     align-items: center; 
     background-color: #ffffff;
     color: #00529c;
-    box-shadow: 0 0 5px;border-radius: 10px;
+    box-shadow: 0 0 5px;
+    border-radius: 10px;
     transition: all 0.25s ease-in-out;
     
 }
@@ -366,9 +350,9 @@ textarea{
     width: 100%;
     height: 15%;
     display: grid;
+    text-align: center;
     place-content: center;
-    font-size: 16px;
-    margin: 0;
+    font-size: 1.4vw;
 }
 .grid p{ 
     width: 90%;
@@ -378,6 +362,7 @@ textarea{
     font-size: 14px;
     font-weight: 400;
     text-align: center;
+    font-size: 1.1vw;
     margin: 0;
 }
 .grid a{
@@ -425,7 +410,7 @@ textarea{
 #Scontact{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: end;
     background-image: url(./image/learnspanish.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;   
@@ -437,7 +422,7 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 2.2vw;
     color: rgba(255, 255, 255);
     background-color: #00529c;
     background-color:  rgba(0, 92, 179, 0.462) ;
@@ -457,40 +442,41 @@ textarea{
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: end;
     align-items: center;  
     color: #ffffff;
-
 }
 .conteiner-imgC img{
-    width: 60%;
-    height: 100%;
+    width: auto;
+    height: 90%;
     display: flex;
-    align-items: center;
+    align-items: end;
+    justify-content: center;
 }
 .conteiner-descripcion h2{
     width: 100%;
-    height: 30%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 45px;
+    font-size: 3vw ;
     margin: 0;
     padding: 0;    
-  
 }
 .conteiner-descripcion p{
     width: 100%;
-    height: 70%;
+    height: 60%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 1.8vw;
 }
 .conteiner-descripcion p span{
     width: 100%;
-    height: 33%;
+    height: 30%;
     display: flex;
     align-items: center;  
 }
@@ -499,6 +485,7 @@ textarea{
     height: 100%;
     display: flex;
     align-items: center;
+    
 }
 .conteiner-redes{
     width: 100%;
@@ -508,6 +495,7 @@ textarea{
     align-items: center;
     color: #000000;
     box-shadow: 0 0 3px;
+    
 }
 .redes{
     width: 33.33%;
@@ -563,6 +551,7 @@ textarea{
     background-color: #0aaa07;
 }
 
+
 /*************************************************/
 .conteiner-aboutMe{
     width: 100%;
@@ -574,28 +563,28 @@ textarea{
 }
 .conteiner-descripcion-t{
     width: 100%;
-    height: 15%;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 2.2vw;
     color: rgb(0, 0, 0, 0.7);
+    border: 1px solid red;
 }
 .conteiner-testimonio{
     width: 100%;
-    height: 100%;
+    height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid white;
-   
 }
 
 .conteiner-img-testimonios{
-    width: 25%;
+    width: 30%;
     height: 75%;
     display: flex;
-    margin: 2%;
+    margin: 1%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -616,15 +605,15 @@ textarea{
 }
 
 .conteiner-img-testimonios img{
-    width: 140px;
-    height:140px;
+    width: 120px;
+    height:120px;
     border-radius: 50%;
     box-shadow: 0 0 8px;
     margin-bottom: 50%;
 }
 .conteiner-data-testimonios{
     width: 100%;
-    height:50%;
+    height:60%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -634,19 +623,30 @@ textarea{
 }
 
 .conteiner-data-testimonios p{
-    width: 85%;
-    height:90%;
+    width: 90%;
+    height:80%;
     display: flex;
     text-align: justify;
     align-items: center;
     color: #000000;
-    font-size: 12px;
+    font-size: 1.2vw;
     padding: 0px 15px 0px 15px;
     border-bottom: 1px solid rgb(0, 0, 0, 0.05);
+    margin: 0;
 }
 .conteiner-t-data-testimonios {
     width: 100%;
-    height:10%;
+    height:25%;
+}
+.conteiner-t-data-testimonios h2{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
 }
 
 
@@ -754,10 +754,10 @@ button {
     background-color:  rgb(117, 170, 219) ;
     border: 1px solid #00529c;
 }
+
 /**********************************************************************/
 /*Escritorio*/
 @media (min-width: 1199.98px)  {
-    body{background: rgb(222, 90, 8);}
 
 }
 /*Fin Escritorio*/
@@ -765,327 +765,325 @@ button {
 /*Tablet*/
 /*Portrait*/
 @media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
-    body{background: rgb(222, 90, 8);}
+    body{background: rgb(200, 140, 198);}
 
-   .logo img{
+/***section 1***/
+/***fin section 1***/
+
+/***section 2***/
+.conteiner-img-testimonios{
     width: 100%;
-    align-items: start;
+    height: 30%;
+    flex-direction: row;
 }
-
-.conteiner-btn-burger p{
+.img-testimonio{
+    width: 50%;
+    height: 90%;
+}
+.conteiner-img-testimonios img{
     width: 100px;
-    height: 100px;
-    position: absolute;
-    font-size: 55px;
-    transform: rotate(90deg);
-    color: #ffffff;
-    left: 85%;
-    top: 10%;
+    height:100px;
+}
+.conteiner-data-testimonios {
+   height: 100%;
+}
+.conteiner-data-testimonios p{
+    font-size: 1.5vw;
+}
+.conteiner-testimonio{
+    flex-direction: column;
 }
 
-   .conteiner-Scarrucel ul{
-    height: 120%;
-   
+/***fin section 2***/
+
+/***section 3***/
+.conteiner-services{
+    grid-gap: 4%;
 }
-  
-    .conteiner-descripcion-t{
-        height: 10%;
-        font-size: 12px;
-    }
-    .conteiner-testimonio{
-        height: 90%;
-        flex-direction: column;
-    }
-    .conteiner-li{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        justify-content: end;
-    }
-    .conteiner-li ul{
-        width: 60%;
-        height: 100%;
-        margin-top: 120px;
-        flex-direction: column;
-    
-    }
-    .list{
-        width: 100%;
-    }
-      
-        .texto h2{
-            width:100%;
-            font-size:70px;
-            margin: 25% 0 0 2%;
-        }
-        .texto p{
-            width:100%;
-            margin: 0% 0 0 2%;
-            font-size:35px;
-        }
-        .conteiner-a {
-            width: 30%;
-            height: 12%;
-            margin: 0% 0 0 2%;
-            font-size:22px;
-            display: none;
-        }
-        .conteiner-a i{
-            display: none;
-        }
-        .conteiner-descripcion-t{
-            font-size: 25px;
-        }
+.conteiner-services{
+    grid-gap: 4%;
+}
+.conteiner-services{
+    place-content: none;
+    grid-template-columns: 150px 150px 150px ;
+}
+.grid{
+    width: 120px;
+    height: 120px;
+}
 
-        .conteiner-img-testimonios{
-            width: 100%;
-            height: 33%;
-            flex-direction: row;
-            border: none;
-            border-bottom-right-radius: 20%;
-        }
-        .img-testimonio{
-            width: 20%;
-            height: 100%;
-            border: none;
-            
-        }
-        #bandera-francesa,#bandera-alemana,#bandera-eeuu{
-       background-image: none;
-        }
-        .conteiner-t-data-testimonios{
-            width: 100%;
-            height:30%;
-        }
-        .conteiner-t-data-testimonios h2{
-         height:100%;
-         margin: 1%;
-         font-size: 35px;
-         align-items: center;
-        }
-        .conteiner-data-testimonios{
-            width: 80%;
-            height:100%;
-        }
-        .conteiner-data-testimonios p{
-            width: 95%;
-            height:70%;
-            padding: 1%;
-            font-size: 20px;   
-        }
-       
-        /*section-3*/
-        .conteiner-services-t{
-            height: 10%;
-            font-size: 25px;
-        }
-        .conteiner-services{
-            grid-gap: 3% ;  
-            grid-template-columns: 220px 220px  220px  ;
-         }
-         .grid{
-            width: 200px;
-            height: 200px;
-            border-radius: 20px;
-        }
-        .grid p{
-          display: none;
-        }
-        .grid i {
-            font-size: 55px;
-      
-          }
-          .grid h3 {
-            font-size: 25px;
-            text-align: center;
-            margin: 10%;
-          }
-         /*Fin-section-3*/
+.grid p{
+    display: none;
+}
 
-         /*section-4*/
-    
-         .conteiner-contact{
-            height: 60%;
-            flex-direction: column;
-         }
-      
-        .conteiner-redes {
-            height: 40%;
-        }
-        .redes img{
-            width: 30%;
-            height: 30%;
-       
-        }
-   
-      
-        .conteiner-imgC{
-          display: none;
-        }
-        .conteiner-descripcion {
-            width: 100%;
-            height: 100%;
-            border: 1px solid red;
-        }
-        .conteiner-imgC img{
-            border-bottom: 2px solid rgb(0, 0, 0, 0.1);
-        }
-    
-        .conteiner-descripcion p {
-            font-size: 35px;
-        }
-        .conteiner-descripcion h2 {
-            width: 100%;
-            text-align: center;
-        }
-        .conteiner-descripcion p span {
-           justify-content: center;
-        }
-        .conteiner-descripcion p span i{ 
-            width: 15%;
-            justify-content: center;
-        }
-        /**fin section 4*/
-        .icono-what{
-            width: 100px;
-            height: 100px;
-            left: 81%;
-        }
-        .form{
-            width: 85%;
-    
-        }
-        .form h2{
-            width: 85%;
-            font-size: 50px;
-        }
-        .form i{
-            font-size: 50px;
-        }
-        .form input , textarea, button{
-            font-size: 30px;
-        }
 
+/***fin section 3***/
+
+/***section 4***/
+
+
+.conteiner-descripcion h2{
+    font-size: 5vw ; 
+}
+.conteiner-descripcion p{
+    font-size: 2.5vw;
+}
+.conteiner-imgC {
+    width: 60%;
 
 }
+.conteiner-descripcio{
+    width: 40%;
+
+}
+
+/***fin section 4***/
+
+
+
+
+
+.icono-what{
+    top: 83%;
+    left: 80%;
+}
+
+}
+
 
 /*landscape*/
 @media (min-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
     body{background: blue;}
-    /****section 1***/
-    .texto h2{
-        font-size:55px;
-    }
-    .texto p{
-        font-size:20px;
-    }   
-    .conteiner-a {
-        font-size:13px;
-    }
-     /*Fin-section-1*/
-    /*section-2*/
-    .conteiner-img-testimonios{
-        width: 30%;
-        margin: 1%;
-    }
-    
-    .conteiner-data-testimonios p{
-        width: 90%;
-        font-size: 11px;   
-       
-    }
-    
-    /*section-3*/
-    .conteiner-services{
-       grid-gap: 5% ;  
-    }
-    
-    /*Fin-section-3*/
-     /*section-4*/
-     .conteiner-imgC img{
-        width: 100%;
-    
-    }
+}
+/***section 1***/
+/***fin section 1***/
 
-    /*Fin-section-4*/
+/***section 2***/
+/***fin section 2***/
 
-    .icono-what{
-        left: 90%;
-    }
-    }
+/***section 3***/
+.conteiner-services{
+    grid-gap: 4%;
+}
+
+/***fin section 3***/
+
+/***section 4***/
+/***fin section 4***/
+
+.icono-what{
+    top: 83%;
+    left: 91%; 
+}
 
 /*fin tablet*/
 
 /*movil*/
 /*Portrait*/
 /*Default*/
-@media (max-width: 575.98px)and (orientation:portrait) {
-    body{background: green;}
- }
-/*landscape*/
-@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
-    body{background: rgb(112, 14, 161);}
-    /*section 1*/
+@media (min-width: 375.98px)and (orientation:portrait) {
+    body{background: green;
+     display: block;
+    }
+    html{
+ 
+    }
+    /***section 1***/
 
-    /*fin section 1*/
-.conteiner-descripcion-t{
-    height: 10%;
-    display: flex;
+.texto h2{
     justify-content: center;
-    font-size: 20px;
+    margin-top: 20%;
 }
 
-    .list a{
-        font-size: 14px;
-    }
-    .texto h2{
-        font-size:42px;
-    }
-    .texto p{
-        font-size:20px;
-    }
-    .conteiner-a {
-        font-size:10px;
-    }
-    .conteiner-a i{
-        display: none;
-    }
-    .conteiner-testimonio{
-        flex-direction: column;
-    }
-    .conteiner-img-testimonios{
-        width: 100%;
-        height: 25%;
-        flex-direction: row;
-        border: 1px solid red;
-    }
-    .img-testimonio{
-        width: 50%;
-        height: 100%;
-    }
-    .conteiner-t-data-testimonios{
-        width: 100%;
-        height:30%;
-    }
-    .conteiner-data-testimonios{
-        width: 85%;
-        height:70%;
-    }
+.texto p{
+    justify-content: center;
+ 
+}
+.conteiner-a {
+    width: 20%;
+    font-size: 2vw;
+    display: none;
+} 
+
+
+
+/***fin section 1***/
+
+/***section 2***/
+.conteiner-img-testimonios{
+    width: 100%;
+    height: 30%;
+    flex-direction: row;
+}
+.img-testimonio{
+    width: 50%;
+    height: 90%;
+    
+    border: 1px solid red;
+}
+.conteiner-img-testimonios img{
+    width: 100px;
+    height:100px;
+}
+.conteiner-data-testimonios {
+   height: 100%;
+}
+.conteiner-data-testimonios p{
+    font-size: 1.5vw;
+}
+.conteiner-testimonio{
+    flex-direction: column;
+}
+
+/***fin section 2***/
+
+/***section 3************/
+.conteiner-services{
+    grid-gap: 4%;
+}
+.conteiner-services{
+    place-content: none;
+    grid-template-columns: 100px 100px 100px ;
+}
+.grid{
+    width: 90px;
+    height: 90px;
+}
+
+.grid p{
+    display: none;
+}
+
+
+/***fin section 3*************/
+
+
+/***section 4***/
+.conteiner-descripcion h2{
+    border: 1px solid red;
+    text-align: center;
+    font-size: 7vw ; 
+}
+.conteiner-descripcion p span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5vw;
+ 
+}
+.conteiner-imgC {
+    width: 60%;
+    display: none;
+}
+.conteiner-descripcion{
+   width: 100%;
+   
+    border: 1px solid red;
+
+}
+/***fin section 4***/
     .icono-what{
-        left: 88%;
+        top: 83%;
+        left: 77%; 
     }
-    /*section-3*/
-    .conteiner-services-t{
-        height: 10%;
-        font-size: 20px;
+
+}
+/*landscape*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    body{background: rgb(198, 211, 13);}
+    html{
+        height: 350%;
     }
-    .conteiner-services{
-        grid-gap: 1% ;  
-        grid-template-columns: 200px 200px 200px  ;
-     }
-     
-  
-     
-     /*Fin-section-3*/
+
+/***section 1***/
+
+.texto h2{
+    justify-content: center;
+    margin-top: 20%;
+}
+
+.texto p{
+    justify-content: center;
+ 
+}
+.conteiner-a {
+    width: 20%;
+    font-size: 2vw;
+    display: none;
+} 
+
+
+
+/***fin section 1***/
+
+/***section 2***/
+.conteiner-img-testimonios{
+    width: 100%;
+    height: 30%;
+    flex-direction: row;
+}
+.img-testimonio{
+    width: 50%;
+    height: 90%;
+}
+.conteiner-img-testimonios img{
+    width: 100px;
+    height:100px;
+}
+.conteiner-data-testimonios {
+   height: 100%;
+}
+.conteiner-data-testimonios p{
+    font-size: 1.5vw;
+}
+.conteiner-testimonio{
+    flex-direction: column;
+}
+
+/***fin section 2***/
+
+/***section 3************/
+.conteiner-services{
+    grid-gap: 4%;
+}
+.conteiner-services{
+    place-content: none;
+    grid-template-columns: 150px 150px 150px ;
+}
+.grid{
+    width: 120px;
+    height: 120px;
+}
+
+.grid p{
+    display: none;
+}
+
+
+/***fin section 3*************/
+
+
+/***section 4***/
+.conteiner-descripcion h2{
+    font-size: 5vw ; 
+}
+.conteiner-descripcion p{
+    font-size: 2.5vw;
+}
+.conteiner-imgC {
+    width: 60%;
+
+}
+.conteiner-descripcio{
+    width: 40%;
+
+}
+/***fin section 4***/
+
+.icono-what{
+    top: 83%;
+    left: 87%; 
+}
+
 }
 /*fin movil*/
