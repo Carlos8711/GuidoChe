@@ -31,20 +31,18 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-}.logo img{
+}
+.logo img{
     width: auto;
     height: 100%;
-    border: 1px solid red;
 }
 .logo a{
     width: 100%;
     height: 100%;
-    border: 1px solid red;
 }
 .conteiner-li {
     width: 50%;
     height: 100%;
-    border: 1px solid red;
 }
 .conteiner-li ul{
     width: 100%;
@@ -579,6 +577,13 @@ textarea{
     align-items: center;
     border: 1px solid white;
 }
+.conteiner-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
 
 .conteiner-img-testimonios{
     width: 30%;
@@ -883,13 +888,17 @@ button {
 /*Default*/
 @media (min-width: 375.98px)and (orientation:portrait) {
     body{background: green;
-     display: block;
     }
     html{
+        height: 250%;
  
     }
     /***section 1***/
 
+
+.conteiner-li ul{
+   display: none;
+}
 .texto h2{
     justify-content: center;
     margin-top: 20%;
@@ -905,31 +914,41 @@ button {
     display: none;
 } 
 
-
+.conteiner-data-f{
+    font-size: 2.5vw;
+}
 
 /***fin section 1***/
 
 /***section 2***/
+.conteiner-descripcion-t h2{
+    font-size: 20px; 
+}
 .conteiner-img-testimonios{
     width: 100%;
     height: 30%;
-    flex-direction: row;
+    flex-direction: row;    
 }
 .img-testimonio{
-    width: 50%;
+    width: 25%;
     height: 90%;
-    
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    border-radius: 0;
+    align-items: center;
+ 
 }
+
+
 .conteiner-img-testimonios img{
-    width: 100px;
-    height:100px;
+    width: 75px;
+    height:75px;
 }
 .conteiner-data-testimonios {
    height: 100%;
 }
 .conteiner-data-testimonios p{
-    font-size: 1.5vw;
+    font-size: 8px;
 }
 .conteiner-testimonio{
     flex-direction: column;
@@ -938,20 +957,29 @@ button {
 /***fin section 2***/
 
 /***section 3************/
+.conteiner-services-t{
+    font-size: 16px; 
+}
 .conteiner-services{
-    grid-gap: 4%;
+    grid-gap: 3%;
 }
 .conteiner-services{
     place-content: none;
     grid-template-columns: 100px 100px 100px ;
 }
 .grid{
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
 }
 
 .grid p{
     display: none;
+}
+.grid i{
+    font-size: 30px;
+}
+.grid h3{
+    font-size: 13px;
 }
 
 
@@ -960,15 +988,14 @@ button {
 
 /***section 4***/
 .conteiner-descripcion h2{
-    border: 1px solid red;
     text-align: center;
-    font-size: 7vw ; 
+    font-size: 35px; 
 }
 .conteiner-descripcion p span{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4.5vw;
+    font-size:18px;
  
 }
 .conteiner-imgC {
@@ -977,9 +1004,6 @@ button {
 }
 .conteiner-descripcion{
    width: 100%;
-   
-    border: 1px solid red;
-
 }
 /***fin section 4***/
     .icono-what{
