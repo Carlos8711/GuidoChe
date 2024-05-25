@@ -27,18 +27,19 @@ header{
 
 .logo{
     width: 50%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .logo img{
-    width: auto;
-    height: 100%;
+    width: 380px;
+    height: auto ;
 }
 .logo a{
     width: 100%;
     height: 100%;
+    
 }
 .conteiner-li {
     width: 50%;
@@ -77,10 +78,14 @@ header{
     font-size: 1.5vw;
     
 }
+header{
+    width: 100%;
+    height: 3%;
+}
     
 main{
     width: 100%;
-    height: 100%;
+    height: 97%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,6 +94,9 @@ main{
 section{
     width: 100%;
     height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer{
@@ -153,7 +161,7 @@ footer{
 
 
 .texto h2{
-    width:95%;
+    width:100%;
     height: 20%;
     display: flex;
     align-items: center;
@@ -289,14 +297,15 @@ textarea{
     height: 100%;
     display: grid;
     place-content: center;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-gap: 8%;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-gap: 0%;
     border: 1px solod red;
 }
 
 .grid{
     width: 200px;
     height: 210px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -350,7 +359,7 @@ textarea{
     display: grid;
     text-align: center;
     place-content: center;
-    font-size: 1.4vw;
+    font-size: 20px;
 }
 .grid p{ 
     width: 90%;
@@ -360,7 +369,7 @@ textarea{
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    font-size: 1.1vw;
+    font-size: 14px;
     margin: 0;
 }
 .grid a{
@@ -582,23 +591,23 @@ textarea{
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 }
 
 .conteiner-img-testimonios{
     width: 30%;
-    height: 75%;
+    height: 90%;
     display: flex;
-    margin: 1%;
+    margin: 0.5%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    border: 1px solid rgb(0, 0, 0,0.2); 
+    box-shadow: 0 0 15px;
 }
 .img-testimonio{
     width: 95%;
-    height: 40%;
+    height: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -610,15 +619,15 @@ textarea{
 }
 
 .conteiner-img-testimonios img{
-    width: 120px;
-    height:120px;
+    width: 150px;
+    height:150px;
     border-radius: 50%;
-    box-shadow: 0 0 8px;
-    margin-bottom: 50%;
+    box-shadow: 0 0 15px;
+    margin-bottom: 25%;
 }
 .conteiner-data-testimonios{
     width: 100%;
-    height:60%;
+    height:55%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -629,26 +638,27 @@ textarea{
 
 .conteiner-data-testimonios p{
     width: 90%;
-    height:80%;
+    height:85%;
     display: flex;
     text-align: justify;
     align-items: center;
     color: #000000;
-    font-size: 1.2vw;
+    font-size: 17px;
     padding: 0px 15px 0px 15px;
-    border-bottom: 1px solid rgb(0, 0, 0, 0.05);
     margin: 0;
 }
 .conteiner-t-data-testimonios {
     width: 100%;
-    height:25%;
+    height:15%;
 }
+
 .conteiner-t-data-testimonios h2{
     width: 100%;
     height:100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
     margin: 0;
     padding: 0;
 
@@ -765,12 +775,13 @@ button {
 @media (min-width: 1199.98px)  {
 
 }
+
 /*Fin Escritorio*/
 
 /*Tablet*/
 /*Portrait*/
 @media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
-    body{background: rgb(200, 140, 198);}
+    body{background: rgb(233, 10, 225);}
 
 /***section 1***/
 /***fin section 1***/
@@ -828,7 +839,7 @@ button {
 
 
 .conteiner-descripcion h2{
-    font-size: 5vw ; 
+    font-size: 30px ; 
 }
 .conteiner-descripcion p{
     font-size: 2.5vw;
@@ -865,10 +876,13 @@ button {
 
 /***section 2***/
 /***fin section 2***/
+.conteiner-data-testimonios p{
+    font-size: 13px;
+}
 
 /***section 3***/
 .conteiner-services{
-    grid-gap: 4%;
+    grid-gap:2%;
 }
 
 /***fin section 3***/
@@ -886,8 +900,9 @@ button {
 /*movil*/
 /*Portrait*/
 /*Default*/
-@media (min-width: 375.98px)and (orientation:portrait) {
-    body{background: green;
+@media (min-width: 500.98px)and (orientation:portrait) {
+    body{
+        background-color: #0aaa07;
     }
     html{
         height: 250%;
@@ -896,17 +911,28 @@ button {
     /***section 1***/
 
 
+    .logo{
+        width: 100%;
+    }
+    .logo a{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid red;
+    }
 .conteiner-li ul{
    display: none;
 }
 .texto h2{
+    margin:  0;
     justify-content: center;
+    font-size: 35px;
     margin-top: 20%;
 }
 
 .texto p{
     justify-content: center;
- 
+    font-size: 16px;
 }
 .conteiner-a {
     width: 20%;
@@ -921,8 +947,11 @@ button {
 /***fin section 1***/
 
 /***section 2***/
+.conteiner-descripcion-t{
+    height: 7%;
+}
 .conteiner-descripcion-t h2{
-    font-size: 20px; 
+    font-size: 25px; 
 }
 .conteiner-img-testimonios{
     width: 100%;
@@ -931,14 +960,16 @@ button {
 }
 .img-testimonio{
     width: 25%;
-    height: 90%;
+    height: 95%;
     display: flex;
     justify-content: center;
     border-radius: 0;
     align-items: center;
- 
+    background-image: none;
 }
+#bandera-francesa,#bandera-alemana, #bandera-eeuu{
 
+}
 
 .conteiner-img-testimonios img{
     width: 75px;
@@ -948,7 +979,7 @@ button {
    height: 100%;
 }
 .conteiner-data-testimonios p{
-    font-size: 8px;
+    font-size: 10px;
 }
 .conteiner-testimonio{
     flex-direction: column;
@@ -1010,17 +1041,41 @@ button {
         top: 83%;
         left: 77%; 
     }
+    #SaboutMe{
+        height: 30%;
+    }
+    #Sservices{
+        height: 20%;
+    }
 
 }
 /*landscape*/
 @media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
-    body{background: rgb(198, 211, 13);}
-    html{
-        height: 350%;
-    }
+    body{background: rgb(198, 211, 13);
+}
+  
 
+#Scarrucel{
+    height:17%;
+    border: 4px solid green;
+}
+#SaboutMe{
+    height: 43%;
+    border: 4px solid green;
+}
+#Sservices{
+    height: 20%;
+    border: 4px solid green;
+}
+#Scontact{
+    height: 20%;
+}
+#bandera-francesa,#bandera-alemana, #bandera-eeuu{
+background-size: 60%;
+background-position: 50%;
+}
 /***section 1***/
-
+/**
 .texto h2{
     justify-content: center;
     margin-top: 20%;
@@ -1036,47 +1091,50 @@ button {
     display: none;
 } 
 
-
+**/
 
 /***fin section 1***/
 
 /***section 2***/
-.conteiner-img-testimonios{
-    width: 100%;
-    height: 30%;
-    flex-direction: row;
-}
-.img-testimonio{
-    width: 50%;
-    height: 90%;
-}
+
 .conteiner-img-testimonios img{
-    width: 100px;
-    height:100px;
+    width: 130px;
+    height:130px;
+    margin-bottom: 5%;
 }
-.conteiner-data-testimonios {
-   height: 100%;
+.conteiner-img-testimonios{
+ width: 60%;
+ height: 30%;
+ margin: 1%;
 }
-.conteiner-data-testimonios p{
-    font-size: 1.5vw;
+.conteiner-descripcion-t{
+  height: 5%;
 }
-.conteiner-testimonio{
-    flex-direction: column;
+
+.conteiner-testimonio {
+ height: 95%;
+ flex-direction: column;
 }
+
+
+
 
 /***fin section 2***/
 
 /***section 3************/
 .conteiner-services{
-    grid-gap: 4%;
+    grid-gap: 7%;
 }
 .conteiner-services{
     place-content: none;
-    grid-template-columns: 150px 150px 150px ;
+    grid-template-columns: 100px 100px 100px 100px;
 }
 .grid{
     width: 120px;
     height: 120px;
+}
+.grid h3{
+    font-size: 15px;
 }
 
 .grid p{
@@ -1089,11 +1147,14 @@ button {
 
 /***section 4***/
 .conteiner-descripcion h2{
-    font-size: 5vw ; 
+    border: 1px solid red;
+    font-size: 4vw ; 
 }
 .conteiner-descripcion p{
-    font-size: 2.5vw;
+    font-size: 18px;
+    border: 1px solid red;
 }
+
 .conteiner-imgC {
     width: 60%;
 
