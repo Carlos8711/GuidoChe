@@ -20,12 +20,14 @@
         <div class="logo">
            <a href="index.html"><img src="./image/logo3-removebg-preview.png" alt=""></a> 
         </div>
-      <!-- <div class="conteiner-btn-burger"> 
-            <p>|||</p>
-        </div>-->
-        <div class="conteiner-li">
-             <ul>  
-            <!--<div class="list"><a href="#Sservices"  class="quicksand-uniquifier"></a></div>-->
+        
+        <div class="conteiner-li ">
+            <div class="conteiner-btn-burger " > 
+                <p id="addstyle" onclick="addStyle()">||||</p>
+                <p  id="removestyle"onclick="removeStyle()">||||</p>
+            </div>
+            <ul id="li" >  
+            <li class="list" id="test-nivelatorio"><a href="./leveltest/index.html"  class="quicksand-uniquifier">Test nivelatorio</a></li>
             <li class="list"><a href="#Scarrucel" class="quicksand-uniquifier">Inicio</a></li>
             <li class="list"><a href="./porfolio/index.html" class="quicksand-uniquifier" target="_blank">Sobre mi</a></li>
             <li class="list"><a href="#Scontact" class="quicksand-uniquifier" >Contacto</a></li>
@@ -290,7 +292,7 @@
                 <input type="text" name="lastname" placeholder="Apellido" required>
                 <input type="number" name="number" placeholder="Numero de telefono" required>
                 <input type="email" name="email" placeholder="Email" required>
-                <textarea name="text" name="menssage" required></textarea>
+                <textarea name="text" name="menssage" placeholder="Recuerdas no excederte de 150 caracteres" maxlength="340" required></textarea>
                 <button type="submit">Enviar</button>
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
             </form>

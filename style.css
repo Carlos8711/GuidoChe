@@ -25,6 +25,7 @@ header{
     z-index: 100; 
 }
 
+
 .logo{
     width: 50%;
     height: auto;
@@ -56,7 +57,7 @@ header{
     
 }
 .list{
-    width:20%;
+    width:40%;
     height: 75%;
     list-style: none;
     display: flex;
@@ -75,8 +76,20 @@ header{
     color:  rgb(255, 255, 255) ;
     transition: all 0.25s ease-in-out;
     letter-spacing: 1px;
-    font-size: 1.5vw;
+    font-size: 16px;
     
+}
+#test-nivelatorio{
+    display: none;
+}
+
+.conteiner-btn-burger{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    display: none;
 }
 header{
     width: 100%;
@@ -109,7 +122,6 @@ footer{
 .conteiner-data-f{
     width: 100%;
     height: 100%;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     background-color: #000000;
@@ -182,22 +194,23 @@ footer{
 
 .conteiner-a {
     width: 100%;
-    height: 10%;
+    height: 12%;
     display: flex;
     align-items: center;
     margin-left: 10%;
-    font-size: 1.5vw;
+    font-size: 18px;
 } 
 
 .conteiner-a a{
-    width: 16%;
-    height: 60%;
+    width: 180px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     border-radius: 40px;
     letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
     background-color:  rgb(117, 170, 219) ;
     border :1px solid #ffffff; 
     color: #ffffff;
@@ -298,8 +311,7 @@ textarea{
     display: grid;
     place-content: center;
     grid-template-columns: 250px 250px 250px 250px;
-    grid-gap: 0%;
-    border: 1px solod red;
+    grid-gap: 0%;  
 }
 
 .grid{
@@ -549,10 +561,11 @@ textarea{
 }
 
 /*********************************************/
-.list a:hover, .icono-what:hover, .redes img:hover,.grid a:hover{
+.list a:hover, .icono-what:hover, .redes img:hover,.grid a:hover,.conteiner-a a:hover{
     transform: scale(1.2);
     cursor: pointer;
 }
+
 #block-7:hover{
     transform: scale(1.2);
     background-color: #0aaa07;
@@ -576,7 +589,7 @@ textarea{
     align-items: center;
     font-size: 2.2vw;
     color: rgb(0, 0, 0, 0.7);
-    border: 1px solid red;
+  
 }
 .conteiner-testimonio{
     width: 100%;
@@ -584,7 +597,7 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+
 }
 .conteiner-img{
     width: 100%;
@@ -596,14 +609,14 @@ textarea{
 
 .conteiner-img-testimonios{
     width: 30%;
-    height: 90%;
+    height: 93%;
     display: flex;
     margin: 0.5%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0 0 15px;
+    box-shadow: 0 0 5px;
 }
 .img-testimonio{
     width: 95%;
@@ -703,7 +716,7 @@ textarea{
 }
 
 .form{
-    width: 35%;
+    width: 400px;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -846,19 +859,12 @@ button {
 }
 .conteiner-imgC {
     width: 60%;
-
 }
 .conteiner-descripcio{
     width: 40%;
-
 }
 
 /***fin section 4***/
-
-
-
-
-
 .icono-what{
     top: 83%;
     left: 80%;
@@ -908,36 +914,124 @@ button {
 /*Default*/
 @media (min-width: 500.98px)and (orientation:portrait) {
     body{
-       background-color: #0aaa07;
+       
     }
     html{
         height: 250%;
- 
     }
+    .conteiner-data-f h4{
+    font-size:12px ;
+    }
+    .list a:hover{
+        transform: scale(1.1);
+        background-color: rgb(117, 170, 219);
+        border-bottom: 1px solid#fff;
+    }
+    /****form****/
+
+    /****final form***/
+   
     /**nav**/
-    .conteiner-li {
-        border: 5px solid rgb(0, 0, 0);
+    #test-nivelatorio{
+        display: flex;
     }
+    #removestyle{
+        position: absolute;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        display: none;
+    }
+    .conteiner-li {
+        width: 50%;
+        height: 100%;
+       text-align: center;
+       display: flex;     
+
+    }
+    .conteiner-li ul { 
+        width: 35%;
+        height: 30%;
+        position: fixed;
+        top: 15%;
+        left:100%;
+        transition: all 0.5s ease-in-out;
+       flex-direction: column;
+       background-color: rgba(117, 170, 219,0.8) ;
+     }
+     .conteiner-li ul li { 
+      width: 100%;
+      }
+     .conteiner-li ul li a{ 
+        font-size: 16px;
+      }
+   
+    .logo img{
+        width: 300px;
+        height: auto ;
+    }
+    .conteiner-btn-burger{
+       display: flex;
+       color: #fff;
+    }
+    .conteiner-btn-burger p {
+        position: absolute;
+        font-size: 40px;
+        text-align: center;
+        transform: rotate(90deg);
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+       
+    }
+    .conteiner-btn-burger::before {
+
+        display: inline-block;
+        
+        content:»;
+        
+        width: 0;
+        
+        height: 0;
+        
+        border-style: solid;
+        
+        border-width: 6px 0 6px 10px;
+        
+        border-color: transparent transparent transparent #007bff;
+        
+        margin-right: 10px;
+        
+        }
      /***fin nav ***/
     /***section 1***/
-
-
-
+    .conteiner-a a{
+        width: 120px;
+        height: 40px;
+        font-size: 13px;
+    } 
 
 /***fin section 1***/
 
 /***section 2***/
 .conteiner-descripcion-t{
     height: 7%;
-    border: 1px solid black;
 }
 .conteiner-descripcion-t h2{
     font-size: 25px; 
 }
 .conteiner-img-testimonios{
+    margin-top: 10px;
     width: 100%;
     height: 30%;
+    border-radius: 0;
+    box-shadow: none;
     flex-direction: row;    
+
 }
 .img-testimonio{
     width: 25%;
@@ -1056,14 +1150,24 @@ button {
 #Scontact{
     height: 20%;
 }
+
+/****
 #bandera-francesa,#bandera-alemana, #bandera-eeuu{
 background-size: 60%;
 background-position: 50%;
 }
+/****nav***/
+.list {
+    border: 1px solid red;
+    
+}
+
+/****fin de nav**/
 /***section 1***/
 .conteiner-a a{
-    height: 90%;
-    font-size: 1.6vw;
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
 } 
 /***fin section 1***/
 /***section 2***/
@@ -1112,18 +1216,14 @@ background-position: 50%;
     display: none;
 }
 
-
 /***fin section 3*************/
-
 
 /***section 4***/
 .conteiner-descripcion h2{
-    border: 1px solid red;
     font-size: 4vw ; 
 }
 .conteiner-descripcion p{
     font-size: 18px;
-    border: 1px solid red;
 }
 
 .conteiner-imgC {
