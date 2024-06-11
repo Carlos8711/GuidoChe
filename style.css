@@ -573,6 +573,7 @@ textarea{
 
 
 /*************************************************/
+
 .conteiner-aboutMe{
     width: 100%;
     height: 100%;
@@ -580,8 +581,41 @@ textarea{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid red;
 }
-.conteiner-descripcion-t{
+.container-testimonios{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+.btn-back{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+}
+.btn-next{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right:10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(0, 51, 255);
+}
+
+/* .conteiner-descripcion-t{
     width: 100%;
     height: 20%;
     display: flex;
@@ -675,7 +709,7 @@ textarea{
     margin: 0;
     padding: 0;
 
-}
+}*/
 
 
 /*********************************************/
