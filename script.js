@@ -4,6 +4,8 @@ let viewform=document.getElementById("conteiner-form")
 let addSt=document.getElementById("addstyle")
 let reSt=document.getElementById("removestyle")
 let liul=document.getElementById('li')
+let btnNext=document.getElementById('btn-next')
+
 
  function btnCancelMensege(){
    viewform.classList.add('closeform')
@@ -28,4 +30,7 @@ let liul=document.getElementById('li')
  })
 
   
-
+ btnNext.addEventListener("click", btnNet);
+ function btnNet(){
+  console.log("hola")
+ }

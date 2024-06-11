@@ -573,24 +573,53 @@ textarea{
 
 
 /*************************************************/
-
+.containar-title-testimonio{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    margin: 0;
+}
 .conteiner-aboutMe{
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid red;
 }
+
 .container-testimonios{
     width: 80%;
     height: 80%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgb(81, 255, 0);
+}
+.testimonio{
+    width: 65%;
+    height: 70%;
+    overflow: hidden;
+}
+.testimonio ul{
+    width: 300%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
     border: 1px solid red;
+    margin: 0;
+    padding: 0;
+}
+.testimonio ul li{ 
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 1px solid red;
+    list-style: none;
+   
 }
 .btn-back{
     width: 100px;
@@ -601,7 +630,9 @@ textarea{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 50px;
     border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
 }
 .btn-next{
     width: 100px;
@@ -612,8 +643,11 @@ textarea{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 50px;
+    cursor: pointer;
     border: 1px solid rgb(0, 51, 255);
 }
+
 
 /* .conteiner-descripcion-t{
     width: 100%;
