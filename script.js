@@ -3,7 +3,7 @@
 let viewform=document.getElementById("conteiner-form")
 let addSt=document.getElementById("addstyle")
 let reSt=document.getElementById("removestyle")
-let liul=document.getElementById('li')
+let ulList=document.getElementById('ulList')
 let btnNext=document.getElementById('btn-next')
 
 
@@ -31,6 +31,12 @@ let btnNext=document.getElementById('btn-next')
 
   
  btnNext.addEventListener("click", btnNet);
+
  function btnNet(){
-  console.log("hola")
+
+  ulList.style.marginLeft="-100%"
+
+
+
+
  }
