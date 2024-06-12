@@ -119,6 +119,14 @@ footer{
     justify-content: center;
     align-items: end;  
 }
+footer h4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-size: 14px;
+}
 .conteiner-data-f{
     width: 100%;
     height: 100%;
@@ -254,14 +262,6 @@ footer{
     
 }
 /*********************************************/
-.conteiner-contact{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    box-shadow: 0 0 15px;
-    background-color:  rgb(117, 170, 219,0.971) ;
-    overflow: hidden;
-}
 
 .conteiner-inp{
     width: 100%;
@@ -305,6 +305,28 @@ textarea{
     cursor: pointer;
 }
 /***********************************************/
+#Sservices{
+    display: flex;
+    flex-direction: column;
+    border: 1px  rgb(117,170,219);
+    background-image:url(./image/pexels-peter-olexa-2214257-4012966.jpg);
+    background-position: 50% 100%  ;
+    background-repeat: no-repeat;
+    background-size: 100% 110% ;
+    box-shadow: 0 0 5px;
+}
+
+.conteiner-services-t{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2vw;
+    color: rgba(255, 255, 255);
+    background-color: #00529c;
+    background-color:  rgba(0, 92, 179, 0.462) ;
+}
 .conteiner-services{
     width: 100%;
     height: 100%;
@@ -426,6 +448,8 @@ textarea{
 }
 /*********************************************/
 
+
+
 #Scontact{
     display: flex;
     flex-direction: column;
@@ -435,28 +459,148 @@ textarea{
     background-size: 100% 100%;   
     background-position: 50% 50%;   
 }
-.conteiner-services-t{
+
+.container-contact-title{
     width: 100%;
     height: 15%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 2.2vw;
-    color: rgba(255, 255, 255);
-    background-color: #00529c;
-    background-color:  rgba(0, 92, 179, 0.462) ;
+    margin: 0;
+    border: 1px solid red;
 }
-#Sservices{
+.container-contact-title h2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 0;
+
+}
+.container-contact{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    margin: 0;  
+
+    background-color:  #000a ;
+}
+.container-form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;  
+
+}
+.container-social-networld{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;  
+
+}
+.container-sendme-messenger{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;  
+}
+.container-sendme-messenger h2{
+    width: 95%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color :#fff;
+    font-size: 50px;
+    margin: 0;  
+
+}
+
+.conteiner-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width:100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
-    border: 1px  rgb(117,170,219);
-    background-image:url(./image/pexels-peter-olexa-2214257-4012966.jpg);
-    background-position: 50% 100%  ;
-    background-repeat: no-repeat;
-    background-size: 100% 110% ;
-    box-shadow: 0 0 5px;
+    align-items: center;
+    font-size: 20px;  
+    overflow: hidden;
+
 }
-.conteiner-imgC ,.conteiner-descripcion{
+
+.form h2{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+.form input {
+    width: 80%;
+    height: 10%;
+    margin: 2%;
+    padding-left:10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size:16px;
+    background-color: #0001;
+    border: 1px solid #fff;
+}
+.form input::placeholder {
+    color: #fffa;
+    font-size:20px;
+}
+/********************************************/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+/*********************************************/
+.form textarea {
+    width: 80%;
+    height: 30%;
+    margin: 2%;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+}
+.form textarea::placeholder{
+  padding-top: 5px;
+  font-size: 14px;
+}
+button {
+    width: 80%;
+    height: 7%;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    background-color:  rgb(117, 170, 219) ;
+    border: 1px solid #00529c;
+}
+
+/*    .conteiner-imgC ,.conteiner-descripcion{
     width: 50%;
     height: 100%;
     display: flex;
@@ -532,7 +676,7 @@ textarea{
     width:50px;
     height: 50px;
     transition: all 0.25s ease-in-out;
-}
+}*/
 
 /****************************************/
 .icono-what{
@@ -575,16 +719,15 @@ textarea{
 /*************************************************/
 .containar-title-testimonio{
     width: 100%;
-    height: 20%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     margin: 0;
 }
 .conteiner-aboutMe{
     width: 100%;
-    height: 100%;
+    height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -597,11 +740,10 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(81, 255, 0);
 }
 .testimonio{
     width: 65%;
-    height: 70%;
+    height: 80%;
     overflow: hidden;
 }
 .testimonio ul{
@@ -609,17 +751,64 @@ textarea{
     height: 100%;
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
     margin: 0;
     padding: 0;
+    transition: all 0.5s ease-in-out;
 }
 .testimonio ul li{ 
-    width: 100%;
+    width:97%;
     height: 100%;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    border: 1px solid red;
+
     list-style: none;
-   
+}
+.testimonio ul li p{ 
+    width: 85%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+.testimonio ul li h3{ 
+    width: 100%;
+    height: 10%;
+    font-size: 19px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #02f;
+    margin: 0;
+}
+.testimonio ul li h4{ 
+    width: 100%;
+    height: 10%;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+}
+.container-img{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-img img{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px;
 }
 .btn-back{
     width: 100px;
@@ -631,8 +820,8 @@ textarea{
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    border: 1px solid rgb(0, 0, 0);
     cursor: pointer;
+    color: #0008;
 }
 .btn-next{
     width: 100px;
@@ -645,105 +834,10 @@ textarea{
     align-items: center;
     font-size: 50px;
     cursor: pointer;
-    border: 1px solid rgb(0, 51, 255);
+    color: #0008;
 }
 
 
-/* .conteiner-descripcion-t{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.2vw;
-    color: rgb(0, 0, 0, 0.7);
-  
-}
-.conteiner-testimonio{
-    width: 100%;
-    height: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.conteiner-img{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.conteiner-img-testimonios{
-    width: 30%;
-    height: 93%;
-    display: flex;
-    margin: 0.5%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 0 5px;
-}
-.img-testimonio{
-    width: 95%;
-    height: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
-    border-bottom-right-radius: 50%;
-}
-
-.conteiner-img-testimonios img{
-    width: 150px;
-    height:150px;
-    border-radius: 50%;
-    box-shadow: 0 0 15px;
-    margin-bottom: 25%;
-}
-.conteiner-data-testimonios{
-    width: 100%;
-    height:55%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    color: #000000;
-    font-size: 12px;
-}
-
-.conteiner-data-testimonios p{
-    width: 90%;
-    height:85%;
-    display: flex;
-    text-align: justify;
-    align-items: center;
-    color: #000000;
-    font-size: 17px;
-    padding: 0px 15px 0px 15px;
-    margin: 0;
-}
-.conteiner-t-data-testimonios {
-    width: 100%;
-    height:15%;
-}
-
-.conteiner-t-data-testimonios h2{
-    width: 100%;
-    height:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-
-}*/
 
 
 /*********************************************/
@@ -768,88 +862,7 @@ textarea{
     background-size: 100% 100%;
 }
 /******************************************************/
-.conteiner-form{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.349);
-    top: 8%;
-    right: 0%;
-}
-.closeform{
-    display: none;
-}
 
-.form{
-    width: 400px;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    background-color: #ffffff;
-    font-size: 20px;  
-    overflow: hidden;
-    box-shadow: 0 0 3px;
-}
-.form i{
-    width: 95%;
-    height: 7%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    background-color: #ffffff;
-    cursor: pointer;
-    font-size: 20px;
- 
-}
-.form h2{
-    width: 100%;
-    height: 7%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    margin: 0;
-    padding: 0;
-}
-.form input {
-    width: 80%;
-    height: 7%;
-    margin: 2%;
-    padding-left:10px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
-}
-/********************************************/
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-    }
-input[type=number] { -moz-appearance:textfield; }
-/*********************************************/
-.form textarea {
-    width: 80%;
-    height: 25%;
-    margin: 2%;
-    border: none;
-    border: 1px solid rgba(0, 0, 0, 0.349);
-}
-button {
-    width: 80%;
-    height: 7%;
-    border: none;
-    color: #ffffff;
-    font-size: 20px;
-    letter-spacing: 1px;
-    border-radius: 10px;
-    background-color:  rgb(117, 170, 219) ;
-    border: 1px solid #00529c;
-}
 
 /**********************************************************************/
 /*Escritorio*/
