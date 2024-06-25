@@ -8,6 +8,27 @@ body{
     padding: 0%;
     margin: 0%;
     display: flex;
+    justify-content: start;
+    align-items: center;
+}
+section{
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff3;
+}
+.section-img-fondo{
+    background-image: url(../image/pexels-geralt-21696.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }

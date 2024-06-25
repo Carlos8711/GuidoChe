@@ -21,24 +21,25 @@
 
 <header>
     <div class="nav">
-        <div class="logo">
+        <div class="logo" >
             <!-- <h1 class="mansalva-regular" >Guido Che!</h1>-->
-           <a href="index.html"><img src="./image/logo3-removebg-preview.png" alt=""></a> 
+           <a href="#Scarrucel"><img src="./image/logo3-removebg-preview.png" alt=""></a> 
         </div>
         
         <div class="conteiner-li ">
             <div class="conteiner-btn-burger " > 
-                <p id="addstyle" onclick="addStyle()">||||</p>
-                <p  id="removestyle"onclick="removeStyle()">||||</p>
+                <i class="bi bi-list" id="btn-burger" onclick="btnBurguer()" ></i>
             </div>
-            <ul id="li" >  
+            <ul id="navullist" >  
             <li class="list" id="test-nivelatorio"><a href="./leveltest/index.html"  class="quicksand-uniquifier">Test nivelatorio</a></li>
             <li class="list"><a href="#Scarrucel" class="quicksand-uniquifier">Inicio</a></li>
-            <li class="list"><a href="./porfolio/index.html" class="quicksand-uniquifier" target="_blank">Sobre Mi</a></li>
+            <li class="list"><a href="#Sservices" class="quicksand-uniquifier">Servicios</a></li>
+            <li class="list"><a href="#SaboutMe" class="quicksand-uniquifier">Testimonio</a></li>
             <li class="list"><a href="#Scontact" class="quicksand-uniquifier">Contacto</a></li>
+            <li class="list"><a href="./porfolio/index.html" class="quicksand-uniquifier" target="_blank">Sobre Mi</a></li>
         </ul>
         </div>   
-    </div>
+</div>
 </header>
  
     <main>
@@ -97,8 +98,10 @@
          
 
            <div class="conteiner-services-t">
-                <h2  class="barlow-condensed-light ">Por que elegirme? </h2>
+                <h2  class="barlow-condensed-light ">SERVICIOS </h2>
            </div>
+
+<div class="container-services-all">
 
 
             <div class="conteiner-services" >
@@ -145,6 +148,9 @@
                         cada clase está diseñada para mantenerte comprometido y motivado
                     </p>
                 </div>
+            </div>
+
+            <div class="conteiner-services" >
                 <div class="grid"  id="block-5">
                     <div class="conteiner-i">
                         <i class="bi-people"></i>
@@ -178,7 +184,7 @@
                     <div class="conteiner-i"  >
                         <i class="bi-chat-right-dots"></i>
                     </div>
-                    <h3 class="rubik-uniquifier">Formacion nativa</h3>
+                    <h3>Formacion nativa</h3>
                    <p class="rubik-uniquifier" >
                     Aprenderás no solo el idioma, sino también la cultura y
                     las expresiones propias de hablantes nativos
@@ -187,25 +193,10 @@
              
               
             </div>
-              
+        </div>          
               
          
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -262,41 +253,51 @@
         </section>
 
         <section id="Scontact">
-            <div class="Scontact">
-                <img src="./image/learnspanish.png" alt="">
-            </div>
-            <div class="container-contact-title">
-                <h2 class="barlow-condensed-light ">CONTACTO</h2>
-            </div>
-            <div class="container-contact">
-                <div class="container-sendme-messenger">
-                    <h2 class="mansalva-regular">Enviame <br>un <br>mensaje</h2>
-                    <h4><i class="bi bi-telephone"></i>+39 379 284 7768</h4>
-                    <h4><i class="bi bi-envelope"></i>Guidocheidiomas@gmail.com</h4>
-                </div>
-                <div class="container-form">
-                    <div class="conteiner-form  " id="conteiner-form">
-                        <form action="https://formsubmit.co/4c6f1b1457af1c98dbdc006a8a7dad10" method="post" class="form">
-                            <input type="text" name="name" placeholder="Nombre" required>
-                            <input type="text" name="lastname" placeholder="Apellido" required>
-                            <input type="number" name="number" placeholder="Numero de telefono" required>
-                            <input type="email" name="email" placeholder="Email" required>
-                            <textarea name="text" name="menssage" placeholder="" maxlength="340" required></textarea>
-                            <button type="submit">Enviar</button>
-                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
-                        </form>
+                    <div class="Scontact">
+                        <img src="./image/learnspanish.png" alt="">
                     </div>
-                </div>
-                <div class="container-social-networld">
 
-                </div>
+                    <div class="container-contact-title">
+                        <h2 class="barlow-condensed-light ">CONTACTO</h2>
+                    </div>
 
-            </div>
+        <div class="container-contact">
+                        <div class="container-sendme-messenger">
+                            <h2 class="mansalva-regular">Enviame <br>un <br>mensaje</h2>
+                            <div class="container-data-extra">
+                                <h3  class="barlow-condensed-light ">EMAIL</h3>
+                                <h4 class="quicksand-uniquifier">Guidocheidiomas@gmail.com</h4>
+                                <h3  class="barlow-condensed-light ">TELEFONO</h3>
+                                <h4 class="quicksand-uniquifier" >+39 379 284 7768</h4>
+
+                                <div class="container-data-extra-social-networld">
+                                    <a href="https://www.instagram.com/guidoagustin4?igsh=MzRlODBiNWFlZA==" target="_blank"><i class="bi bi-instagram"></i></a> 
+                                    <h4 class="quicksand-uniquifier" >@guidoagustin4</h4>
+                                </div>
+                                <div class="container-data-extra-social-networld">
+                                    <a href="https://www.facebook.com/guido.mon?mibextid=LQQJ4d" target="_blank"><i class="bi bi-facebook"> </i></a>
+                                    <h4 class="quicksand-uniquifier">/Guido Agustin Mon</h4>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="container-form" id="conteiner-form">
+                            <form action="https://formsubmit.co/4c6f1b1457af1c98dbdc006a8a7dad10" method="post" class="form">
+                                <input type="text" name="name" placeholder="Nombre*" required>
+                                <input type="text" name="lastname" placeholder="Apellido*" required>
+                                <input type="number" name="number" placeholder="Numero de telefono" >
+                                <input type="email" name="email" placeholder="Email*" required>
+                                <textarea name="text" name="menssage" placeholder="" maxlength="340" required></textarea>
+                                <button type="submit">Enviar</button>
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                            </form>
+                        </div>
+    </div>
 
         </section>
             <a href="./leveltest/index.html"   class="icono-test "  target=”_blank” >
                 <i class="bi bi-file-text"></i>
-                <h4>Test</h4>
+                <h4  class="rubik-uniquifier">Test</h4>
             </a>
             <a href="https://wa.me/393792847768/?text=Hola..!!%20Quiero%20aprender%20español"   class="icono-what"  target=”_blank” >
             <img src="./image/what.png" alt="" >

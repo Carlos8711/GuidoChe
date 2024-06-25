@@ -1,38 +1,47 @@
 
 
-let viewform=document.getElementById("conteiner-form")
+
 let addSt=document.getElementById("addstyle")
 let reSt=document.getElementById("removestyle")
 let ulList=document.getElementById('ulList')
+let navUllist=document.getElementById('navullist')
 let btnNext=document.getElementById('btn-next')
 let btnBack=document.getElementById('btn-back')
+let btnBur=document.getElementById('btn-burger')
 let tamañoscreen
 let c=0
 const ulListStyle=getComputedStyle(ulList)
+const navUllistStyle=getComputedStyle(navUllist)
+const btnBurStyle=getComputedStyle(btnBur)
+let screenzise=0
+let entrar=true
 
- function btnCancelMensege(){
-   viewform.classList.add('closeform')
- }
+window.addEventListener('resize', changeScreen);
+btnNext.addEventListener("click", btnNet);
+btnBack.addEventListener("click",btnBac)
 
- function openMenssege(){
-   viewform.classList.remove('closeform')
 
- }
- addSt.addEventListener('click',function(){
-  liul.style.left="65%"
-  addSt.style.display="none"
-  reSt.style.display="flex"
+function changeScreen(e){
+  screenzise=window.screen.width
+  console.log(screenzise)
+  if(screenzise>1199){
+    navUllist.style.display="flex"
+  }
+}
 
- })
- reSt.addEventListener('click',function(){
-  liul.style.left="100%"
-  addSt.style.display="flex"
-  addSt.style.justifyContent="center"
-  addSt.style.alignItems="center"
-  reSt.style.display="none"
- })
+function btnBurguer(){
+  console.log(entrar)
+  if(entrar){
+    navUllist.style.left="0%"
+    navUllist.style.display="flex"
+    entrar=false
+    }else{
+       navUllist.style.left="100%"
+      navUllist.style.display="none"
+       entrar=true
+  }
+}
 
- btnNext.addEventListener("click", btnNet);
 
  function btnNet(){
     if(ulListStyle.marginLeft=="0px"){
@@ -47,7 +56,7 @@ const ulListStyle=getComputedStyle(ulList)
     tamañoscreen=ulListStyle.marginLeft
       btnNet()
   }}
-btnBack.addEventListener("click",btnBac)
+
 function btnBac(){
          tamañoscreen=ulListStyle.marginLeft
       if(ulListStyle.marginLeft==tamañoscreen && c==0){
@@ -63,4 +72,5 @@ function btnBac(){
           tamañoscreen=ulListStyle.marginLeft
           btnBac()
       }
+
  }
