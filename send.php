@@ -17,9 +17,9 @@ $message .= "Mensaje: " . $_POST['message'] . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
 $para = 'salascarlos8711@gmail.com';
-$asunto = 'Quiero aprender español';
+$asunto = 'Quiero aprender español..!';
 
 mail($para, $asunto, utf8_decode($message), $header);
 
-header("http://127.0.0.1:5500/index.html");
+header("https://salas-carlos.me/");
 ?>
