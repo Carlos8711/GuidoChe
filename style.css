@@ -950,7 +950,7 @@ button {
     }
     .nav{
     flex-direction: column;
-    display: none;
+   
     }
     .logo{
         width: 100%;
