@@ -8,11 +8,13 @@ let navUllist=document.getElementById('navullist')
 let btnNext=document.getElementById('btn-next')
 let btnBack=document.getElementById('btn-back')
 let btnBur=document.getElementById('btn-burger')
+let btncontBur=document.getElementById('conteiner-btn-burger')
 let tamañoscreen
 let c=0
 const ulListStyle=getComputedStyle(ulList)
 const navUllistStyle=getComputedStyle(navUllist)
 const btnBurStyle=getComputedStyle(btnBur)
+const btncontBurStyle=getComputedStyle(btncontBur)
 let screenzise=0
 let entrar=true
 
@@ -22,22 +24,22 @@ btnBack.addEventListener("click",btnBac)
 
 
 function changeScreen(e){
-  screenzise=window.screen.width
-  console.log(screenzise)
-  if(screenzise>1199){
+  if(btncontBurStyle.display=="none"){
     navUllist.style.display="flex"
+  }
+  if(btncontBurStyle.display=="flex"){
+    navUllist.style.display="none"
   }
 }
 
 function btnBurguer(){
-  console.log(entrar)
   if(entrar){
-    navUllist.style.left="0%"
-    navUllist.style.display="flex"
-    entrar=false
+     navUllist.style.left="0%"
+     navUllist.style.display="flex"
+     entrar=false
     }else{
        navUllist.style.left="100%"
-      navUllist.style.display="none"
+       navUllist.style.display="none"
        entrar=true
   }
 }
@@ -52,10 +54,11 @@ function btnBurguer(){
         tamañoscreen=ulListStyle.marginLeft
         c=0
     }
-    if(ulListStyle.marginLeft!=tamañoscreen){
-    tamañoscreen=ulListStyle.marginLeft
-      btnNet()
-  }}
+      if(ulListStyle.marginLeft!=tamañoscreen){
+      tamañoscreen=ulListStyle.marginLeft
+        btnNet()
+  }
+}
 
 function btnBac(){
          tamañoscreen=ulListStyle.marginLeft

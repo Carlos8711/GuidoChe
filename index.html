@@ -27,19 +27,19 @@
         </div>
         
         <div class="conteiner-li ">
-            <div class="conteiner-btn-burger " > 
+            <div class="conteiner-btn-burger " id="conteiner-btn-burger" > 
                 <i class="bi bi-list" id="btn-burger" onclick="btnBurguer()" ></i>
             </div>
             <ul id="navullist" >  
-            <li class="list" id="test-nivelatorio"><a href="./leveltest/index.html"  class="quicksand-uniquifier">Test nivelatorio</a></li>
-            <li class="list"><a href="#Scarrucel" class="quicksand-uniquifier">Inicio</a></li>
+            <li class="list"  ><a href="./leveltest/index.html"  class="quicksand-uniquifier" target="_blank">Test</a></li>
+           <!-- <li class="list"><a href="#Scarrucel" class="quicksand-uniquifier">Inicio</a></li>-->
             <li class="list"><a href="#Sservices" class="quicksand-uniquifier">Servicios</a></li>
             <li class="list"><a href="#SaboutMe" class="quicksand-uniquifier">Testimonio</a></li>
             <li class="list"><a href="#Scontact" class="quicksand-uniquifier">Contacto</a></li>
             <li class="list"><a href="./porfolio/index.html" class="quicksand-uniquifier" target="_blank">Sobre Mi</a></li>
         </ul>
         </div>   
-</div>
+|   </div>
 </header>
  
     <main>
@@ -171,12 +171,12 @@
                 </div>
                 <div class="grid"  id="block-7">
                     <div class="conteiner-i">
-                        <i class="bi-pencil-square"></i>
+                        <i class="bi bi-file-text"></i>
                     </div>
                     <h3 class="rubik-uniquifier">Test nivelatorio</h3>
                    <p class="rubik-uniquifier">
                     Realiza un test nivelatorio ahora mismo
-                    <a href="./leveltest/index.html" target=”_blank” ><i class="bi-arrow-right"></i></a>
+                    <a href="./leveltest/index.html" target=”_blank” > <i class="bi-arrow-right"></i></a>
                    </p>
                  
                 </div>
@@ -207,6 +207,7 @@
             <div class="containar-title-testimonio">
                 <h2 class="barlow-condensed-light ">TESTIMONIOS</h2>
             </div>
+
             <div class="conteiner-aboutMe">
                 <div class="btn-back">
                     <i class="bi bi-chevron-left" id="btn-back"></i>
@@ -268,7 +269,7 @@
                                 <h3  class="barlow-condensed-light ">EMAIL</h3>
                                 <h4 class="quicksand-uniquifier">Guidocheidiomas@gmail.com</h4>
                                 <h3  class="barlow-condensed-light ">TELEFONO</h3>
-                                <h4 class="quicksand-uniquifier" >+39 379 284 7768</h4>
+                                <h4 class="quicksand-uniquifier">+39 379 284 7768</h4>
 
                                 <div class="container-data-extra-social-networld">
                                     <a href="https://www.instagram.com/guidoagustin4?igsh=MzRlODBiNWFlZA==" target="_blank"><i class="bi bi-instagram"></i></a> 
@@ -282,12 +283,12 @@
                         </div>
             
                         <div class="container-form" id="conteiner-form">
-                            <form action="https://formsubmit.co/4c6f1b1457af1c98dbdc006a8a7dad10" method="post" class="form">
+                            <form action="send.php" method="post" class="form">
                                 <input type="text" name="name" placeholder="Nombre*" required>
                                 <input type="text" name="lastname" placeholder="Apellido*" required>
-                                <input type="number" name="number" placeholder="Numero de telefono" >
+                                <input type="number" name="phone" placeholder="Numero de telefono" >
                                 <input type="email" name="email" placeholder="Email*" required>
-                                <textarea name="text" name="menssage" placeholder="" maxlength="340" required></textarea>
+                                <textarea name="text" name="message" placeholder="" maxlength="340" required></textarea>
                                 <button type="submit">Enviar</button>
                                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
                             </form>
