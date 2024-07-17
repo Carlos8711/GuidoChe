@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Enviar el correo (esto es un ejemplo, asegúrate de configurar correctamente tu servidor de correo)
         $para = "salascarlos8711@gmail.com"; // Cambia esto por tu dirección de correo
         $asunto = 'Quiero aprender español..!';
-        $cuerpo = "Nombre: $nombre\nCorreo: $email\nMensaje: $mensaje";
+        $cuerpo = "Nombre: $nombre\n Apellido:$lastname\n Telefono:$phone\n Correo:$email\n Mensaje: $mensaje";
         $cabeceras = "From: $email";
 
         if (mail($para, $asunto, $cuerpo, $cabeceras)) {
