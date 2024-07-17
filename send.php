@@ -26,5 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo "Método no permitido.";
 }
-header("https://salas-carlos.me/");
+header("Location:./index.html");
+exit();
 ?>
