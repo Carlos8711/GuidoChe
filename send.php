@@ -1,25 +1,30 @@
 <?php
-$name = $_POST['name'];
-$lastname = $_POST['lastname'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Obtener los datos del formulario
+    $nombre = htmlspecialchars($_POST['name']);
+    $lastname = htmlspecialchars($_POST['lastname']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $email = htmlspecialchars($_POST['email']);
+    $mensaje = htmlspecialchars($_POST['message']);
 
-$header = 'From: ' . $mail . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
+    // Validar los datos (este es un ejemplo simple, puedes hacer validaciones más avanzadas)
+    if (!empty($nombre) && !empty($email) && !empty($mensaje)) {
+        // Enviar el correo (esto es un ejemplo, asegúrate de configurar correctamente tu servidor de correo)
+        $para = "salascarlos8711@gmail.com"; // Cambia esto por tu dirección de correo
+        $asunto = 'Quiero aprender español..!';
+        $cuerpo = "Nombre: $nombre\nCorreo: $email\nMensaje: $mensaje";
+        $cabeceras = "From: $email";
 
-$message = "Este mensaje fue enviado por: " . $name . " \r\n";
-$message .= "Su e-mail es: " . $email . " \r\n";
-$message .= "Teléfono de contacto: " . $phone . " \r\n";
-$message .= "Mensaje: " . $_POST['message'] . " \r\n";
-$message .= "Enviado el: " . date('d/m/Y', time());
-
-$para = 'salascarlos8711@gmail.com';
-$asunto = 'Quiero aprender español..!';
-
-mail($para, $asunto, utf8_decode($message), $header);
-
+        if (mail($para, $asunto, $cuerpo, $cabeceras)) {
+            echo "Mensaje enviado correctamente.";
+        } else {
+            echo "Error al enviar el mensaje.";
+        }
+    } else {
+        echo "Todos los campos son obligatorios.";
+    }
+} else {
+    echo "Método no permitido.";
+}
 header("https://salas-carlos.me/");
 ?>
