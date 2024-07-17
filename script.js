@@ -58,6 +58,8 @@ function btnBurguer(){
       tamañoscreen=ulListStyle.marginLeft
         btnNet()
   }
+
+ 
 }
 
 function btnBac(){
@@ -78,28 +80,3 @@ function btnBac(){
 
  }
 
-
-
-
- document.getElementById('form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevenir el envío del formulario
-
-  var formData = new FormData(this);
-
-  fetch('send.php', {
-      method: 'POST',
-      body: formData
-  })
-  .then(response => response.text())
-  .then(data => {
-      console.log(data); // Puedes usar esto para depuración
-
-      // Mostrar la toast
-      var toast = document.getElementById('toast');
-      toast.className = "toast show";
-      setTimeout(function() {
-          toast.className = toast.className.replace("show", ""); 
-      }, 3000);
-  })
-  .catch(error => console.error('Error:', error));
-});
